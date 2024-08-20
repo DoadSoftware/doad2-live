@@ -20,7 +20,7 @@ const FeaturedProjects = () => (
         >
           <div className="relative overflow-hidden">
             <img
-              src="./images/project1.jpg"
+              src="./images/Cricket.jpg"
               alt="Project"
               className="w-full object-cover cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 hover:blur-md"
             />
@@ -35,12 +35,12 @@ const FeaturedProjects = () => (
         >
           <div className="relative overflow-hidden">
             <img
-              src="./images/project2.jpg"
+              src="./images/Football.jpg"
               alt="Project"
               className="w-full object-cover cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 hover:blur-sm"
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500 "style={{ backdropFilter: 'blur(1px)'}}>
-              <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">CRICKET</h3> <p className="fa-solid fa-circle-arrow-right text-5xl pl-3"></p>
+              <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">FOOTBALL</h3> <p className="fa-solid fa-circle-arrow-right text-5xl pl-3"></p>
             </div>
           </div>
         </div>
@@ -50,12 +50,12 @@ const FeaturedProjects = () => (
         >
           <div className="relative overflow-hidden">
             <img
-              src="./images/project3.jpg"
+              src="./images/Handball.jpg"
               alt="Project"
               className="w-full object-cover cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 hover:blur-sm"
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500 "style={{ backdropFilter: 'blur(1px)'}}>
-              <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">CRICKET</h3> <p className="fa-solid fa-circle-arrow-right text-5xl pl-3"></p>
+              <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">HANDBALL</h3> <p className="fa-solid fa-circle-arrow-right text-5xl pl-3"></p>
             </div>
           </div>
         </div>
@@ -65,12 +65,12 @@ const FeaturedProjects = () => (
         >
           <div className="relative overflow-hidden">
             <img
-              src="./images/project4.jpg"
+              src="./images/Tennis.jpg"
               alt="Project"
               className="w-full object-cover cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 hover:blur-sm"
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500 "style={{ backdropFilter: 'blur(1px)'}}>
-              <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">CRICKET</h3> <p className="fa-solid fa-circle-arrow-right text-5xl pl-3"></p>
+              <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">TENNIS</h3> <p className="fa-solid fa-circle-arrow-right text-5xl pl-3"></p>
             </div>
           </div>
         </div>
@@ -80,12 +80,12 @@ const FeaturedProjects = () => (
         >
           <div className="relative overflow-hidden">
             <img
-              src="./images/project5.jpg"
+              src="./images/Kabaddi.jpg"
               alt="Project"
               className="w-full object-cover cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 hover:blur-sm"
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500 "style={{ backdropFilter: 'blur(1px)'}}>
-              <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">CRICKET</h3> <p className="fa-solid fa-circle-arrow-right text-5xl pl-3"></p>
+              <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">KABADDI</h3> <p className="fa-solid fa-circle-arrow-right text-5xl pl-3"></p>
             </div>
           </div>
         </div>
@@ -95,12 +95,12 @@ const FeaturedProjects = () => (
         >
           <div className="relative overflow-hidden">
             <img
-              src="./images/project6.jpg"
+              src="./images/Athletic.jpg"
               alt="Project"
               className="w-full object-cover cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 hover:blur-sm"
             />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500 "style={{ backdropFilter: 'blur(1px)'}}>
-              <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">CRICKET</h3> <p className="fa-solid fa-circle-arrow-right text-5xl pl-3"></p>
+              <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">ATHLETICS</h3> <p className="fa-solid fa-circle-arrow-right text-5xl pl-3"></p>
             </div>
           </div>
         </div>
