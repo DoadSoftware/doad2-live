@@ -15,66 +15,94 @@ const FeaturedProjects = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Repeat for each project */}
         <div
-          className="bg-white border border-blue-300 p-4 shadow-md"
+          className="relative border border-blue-300 p-4 shadow-md"
           data-aos="fade-up"
         >
-          <img
-            src="./images/Athletic.jpg"
-            alt="Project"
-            className="w-full object-cover zoom-in cursor-pointer"
-          />
-          {/*<h3 className="mt-4 text-xl font-bold">Project Title</h3>
-          <p className="mt-2 text-gray-600">Short project description...</p>*/}
+          <div className="relative overflow-hidden">
+            <img
+              src="./images/project1.jpg"
+              alt="Project"
+              className="w-full object-cover cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 hover:blur-md"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500 "style={{ backdropFilter: 'blur(1px)'}}>
+              <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">CRICKET</h3> <p className="fa-solid fa-circle-arrow-right text-5xl pl-3"></p>
+            </div>
+          </div>
         </div>
         <div
-          className="bg-white border border-blue-300 p-4 shadow-md"
+          className="relative bg-primary-light border border-blue-300 p-4 shadow-md"
           data-aos="fade-up"
         >
-          <img
-            src="./images/Handball.jpg"
-            alt="Project"
-            className="w-full object-cover zoom-in cursor-pointer"
-          />
+          <div className="relative overflow-hidden">
+            <img
+              src="./images/project2.jpg"
+              alt="Project"
+              className="w-full object-cover cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 hover:blur-sm"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500 "style={{ backdropFilter: 'blur(1px)'}}>
+              <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">CRICKET</h3> <p className="fa-solid fa-circle-arrow-right text-5xl pl-3"></p>
+            </div>
+          </div>
         </div>
         <div
-          className="bg-white border border-blue-300 p-4 shadow-md"
+          className="relative bg-primary-light border border-blue-300 p-4 shadow-md"
           data-aos="fade-up"
         >
-          <img
-            src="./images/Football.jpg"
-            alt="Project"
-            className="w-full object-cover zoom-in cursor-pointer"
-          />
+          <div className="relative overflow-hidden">
+            <img
+              src="./images/project3.jpg"
+              alt="Project"
+              className="w-full object-cover cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 hover:blur-sm"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500 "style={{ backdropFilter: 'blur(1px)'}}>
+              <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">CRICKET</h3> <p className="fa-solid fa-circle-arrow-right text-5xl pl-3"></p>
+            </div>
+          </div>
         </div>
         <div
-          className="bg-white border border-blue-300 p-4 shadow-md"
+          className="relative bg-primary-light border border-blue-300 p-4 shadow-md"
           data-aos="fade-up"
         >
-          <img
-            src="./images/project4.jpg"
-            alt="Project"
-            className="w-full object-cover zoom-in cursor-pointer"
-          />
+          <div className="relative overflow-hidden">
+            <img
+              src="./images/project4.jpg"
+              alt="Project"
+              className="w-full object-cover cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 hover:blur-sm"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500 "style={{ backdropFilter: 'blur(1px)'}}>
+              <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">CRICKET</h3> <p className="fa-solid fa-circle-arrow-right text-5xl pl-3"></p>
+            </div>
+          </div>
         </div>
         <div
-          className="bg-white border border-blue-300 p-4 shadow-md"
+          className="relative bg-primary-light border border-blue-300 p-4 shadow-md"
           data-aos="fade-up"
         >
-          <img
-            src="./images/project5.jpg"
-            alt="Project"
-            className="w-full object-cover zoom-in cursor-pointer"
-          />
+          <div className="relative overflow-hidden">
+            <img
+              src="./images/project5.jpg"
+              alt="Project"
+              className="w-full object-cover cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 hover:blur-sm"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500 "style={{ backdropFilter: 'blur(1px)'}}>
+              <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">CRICKET</h3> <p className="fa-solid fa-circle-arrow-right text-5xl pl-3"></p>
+            </div>
+          </div>
         </div>
         <div
-          className="bg-white border border-blue-300 p-4 shadow-md"
+          className="relative bg-primary-light border border-blue-300 p-4 shadow-md"
           data-aos="fade-up"
         >
-          <img
-            src="./images/project6.jpg"
-            alt="Project"
-            className="w-full object-cover zoom-in cursor-pointer"
-          />
+          <div className="relative overflow-hidden">
+            <img
+              src="./images/project6.jpg"
+              alt="Project"
+              className="w-full object-cover cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 hover:blur-sm"
+            />
+            <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500 "style={{ backdropFilter: 'blur(1px)'}}>
+              <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">CRICKET</h3> <p className="fa-solid fa-circle-arrow-right text-5xl pl-3"></p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
