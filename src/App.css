@@ -87,6 +87,11 @@ header {
 /* Add this class for the scrolled state */
 .header-scrolled {
   background-color: #005C96; /* Tailwind's gray-800 */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 /*HORIZONTAL SCROLL */
@@ -107,12 +112,12 @@ header {
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
-  width: 250px; /* Adjust width as needed */
+  width: 250px; 
 }
 
 .logo-image {
   margin-top: 44px;
-  margin-bottom: 44px; /* Adjust spacing as needed */
+  margin-bottom: 44px;
 }
 
 .logo-name {
@@ -127,3 +132,48 @@ header {
   font-style: normal;
 }
 
+.main-content {
+  padding-top: 50px; 
+  min-height: calc(100vh - 80px - 50px);
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  margin-top: auto; 
+}
+.link-3d {
+  position: relative;
+  text-decoration: none;
+  color: #fff; /* Adjust based on your design */
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.link-3d::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+  transform: translateZ(-1px);
+  transition: background 0.3s;
+}
+
+.link-3d:hover::before {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.link-3d:hover {
+  transform: translateY(-2px);
+  color: #005c96; 
+  background: #fff;
+}
+
+.link-3d:active {
+  transform: translateY(0);
+  background: #e0e0e0;
+}
