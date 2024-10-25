@@ -9,28 +9,32 @@ const AboutSection = () => {
       <div className="container mx-auto px-4" data-aos="fade-up">
         <div className="text-center">
           <h2 className="text-3xl font-bold mb-4">ABOUT US</h2>
-          <p className="text-lg mb-6 pl-44 pr-44 uppercase">
-            We are a team of sports enthusiasts who have turned our passion into successful careers in the visual and sports broadcasting industry.
-            With a combined experience of over 30 years, we bring a deep passion, extensive experience, and industry expertise to every project.
+          <p className="text-sm sm:text-lg mb-6 pl-20 pr-20 sm:pl-44 sm:pr-44 uppercase">
+          We are a group of passionate sports enthusiasts who have joined forces to provide cost-effective,
+          state-of-the-art solutions to meet all our clients' needs.
+          We harness the latest and most advanced technology available globally to deliver end-to-end services.
+          Since our establishment in 2021, we have successfully secured and executed high-quality work across all our projects, ensuring customer satisfaction.
           </p>
-          <p className="text-lg pl-44 pr-44 uppercase">
-            Design on a Dime was established as a private limited company, registered under the Companies Act of India, 2010.
+          <p className="text-sm sm:text-lg mb-6 pl-20 pr-20 sm:pl-44 sm:pr-44 uppercase">
+          Our team has a successful history of leading projects and delivering solutions for various prestigious tournaments,
+          including the <b>Indian Super League 2024, ICC  Women’s T20 World Cup 2024, ICC Cricket World Cup 2023,
+          ICC U19 Men’s Cricket World Cup 2024, Indian Street Premier League 2024, LLC Franchise 2023 & 2024, LLC Masters 2023,
+          Tennis Premier League 2023, Uttar Pradesh Kabaddi League 2024, the Bangladesh Premier League (BPL) 2021,
+          the Premier Handball League (PHL), Khelo India University Games 2022, State Domestic T20 Leagues like Andhra Premier League,
+          Maharaja T20, Rajasthan Premier League, Sher E Punjab T20 and the Hero I-League 2022-23. </b>
+          In addition, we've contributed to the creation of assets for events like the Premier Handball League,
+          where we meticulously designed the entire program to captivate viewers with our comprehensive packages.
           </p>
-          <p className="text-lg mb-6 pl-44 pr-44 uppercase">
-            Our mission is straightforward and organically born from our love for sports, entertainment, and the consumer experience. 
-            We aim to provide cost-effective, end-to-end solutions for all our clients' graphic needs on a global scale, utilizing the 
-            latest technology and in-house innovations. In our previous roles, we have led projects and delivered solutions for premier 
-            sporting events such as the Indian Premier League, Big Bash League, and Caribbean Premier League, among others.
+
+          <p className="text-sm sm:text-lg mb-6 pl-20 pr-20 sm:pl-44 sm:pr-44 uppercase">
+          Our expertise extends beyond traditional sports broadcasting into the realm of virtual reality,
+          where we utilize various broadcast cameras to craft custom graphics and experiences.
+          This innovative approach allows us to explore new dimensions in sports presentation.
           </p>
-          <p className="text-lg pl-44 pr-44 uppercase">
-            We have also collaborated closely with leading television broadcast networks like Sony, Star, Ten Sports, and Zee, 
-            delivering a variety of graphics packages across their channels. Additionally, we have played a key role in the creation 
-            of intellectual properties, most notably the Pro Kabaddi League, where we conceptualized the entire show. Our goal was 
-            to engage viewers with cutting-edge video graphics and innovative sports data, revolutionizing the sport for everyone.
-          </p>
-          <p className="text-lg mb-6 pl-44 pr-44 uppercase">
-            Our expertise extends beyond visual graphics broadcasting; we also excel in the realm of Virtual Reality. 
-            Moreover, we specialize in delivering virtual newsroom solutions, encompassing both design and data integration.
+          <p className="text-sm sm:text-lg mb-6 pl-20 pr-20 sm:pl-44 sm:pr-44 uppercase">
+          In summary, we are a highly skilled team with a wealth of experience in the sports industry,
+          specializing in providing top-notch, cost-effective solutions that leverage cutting-edge technology.
+          Our impressive track record and commitment to excellence make us a preferred choice for clients seeking comprehensive sports-related services.
           </p>
         </div>
       </div>

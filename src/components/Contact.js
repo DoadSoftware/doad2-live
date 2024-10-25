@@ -29,6 +29,7 @@ const Contact = () => (
                 className="block text-sm font-medium text-gray-300"
               >
                 Your Name
+                
               </label>
               <input
                 type="text"

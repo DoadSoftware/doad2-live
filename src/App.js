@@ -18,6 +18,7 @@ import TennisPage from "./components/TennisPage";
 import KabaddiPage from "./components/KabaddiPage";
 import AthleticsPage from "./components/AthleticsPage";
 import Footer from "./components/Footer";
+import ProductAndServices from "./components/ProductAndServices";
 
 const App = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -44,7 +45,7 @@ const App = () => {
       <Header className={scrolled ? "header-scrolled" : ""} />
       <main className="main-content">
         <Routes>
-          <Route path="/" element={ <><HeroSection/><AboutSection/><FeaturedProjects/><Expertise/><Clients/><Testimonials/><Contact/></>} />
+          <Route path="/" element={ <><HeroSection/><AboutSection/><FeaturedProjects/><ProductAndServices/><Clients/><Testimonials/><Contact/></>} />
           <Route path="/cricket" element={<CricketPage/>} />
           <Route path="/football" element={<FootballPage/>} />
           <Route path="/handball" element={<HandballPage/>} />
