@@ -6,6 +6,7 @@ const TennisPage = () => {
   const cardsRef = useRef([]);
     
   useEffect(() => {
+    document.title = "Design on a Dime | Tennis"
     window.scrollTo(0, 0);
     gsap.utils.toArray(cardsRef.current).forEach((card, i) => {
       gsap.set(card, { opacity: 0 }); // Ensure each card starts hidden
@@ -31,23 +32,23 @@ const TennisPage = () => {
           {/* Second Card */}
           <div ref={(el) => (cardsRef.current[0] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Tennis/FACE-OFF.jpeg" alt="Cricket Image"/>
+              <img className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Tennis/FACE-OFF.webp" alt="Tennis"/>
             </div>
           </div>
           {/* Second Card */}
           <div ref={(el) => (cardsRef.current[1] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Tennis/MATCH ID.jpeg" alt="Cricket Image"/>
+              <img className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Tennis/MATCH ID.webp" alt="Tennis"/>
             </div>
           </div>
           <div ref={(el) => (cardsRef.current[2] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Tennis/ORDER_OF_PLAY.jpeg" alt="Cricket Image"/>
+              <img className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Tennis/ORDER_OF_PLAY.webp" alt="Tennis"/>
             </div>
           </div>
           <div ref={(el) => (cardsRef.current[3] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Tennis/PHOTO_MATCH_ID.jpeg" alt="Cricket Image"/>
+              <img className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Tennis/PHOTO_MATCH_ID.webp" alt="Tennis"/>
             </div>
           </div>
 

@@ -46,6 +46,7 @@ const HorizontalScrollSection = () => {
 
   return (
     <div className="scroll-section bg-primary-light">
+      <h2 className="font-Oswald text-3xl font-bold mb-4 text-center text-white">OUR CLIENTS</h2>
       <div className="scroll-container" ref={scrollContainerRef}>
         {logos.concat(logos).map((logo, index) => (
           <div key={index} className="logo-item border border-blue-300">

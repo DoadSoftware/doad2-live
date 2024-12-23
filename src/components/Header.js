@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 
 const Header = ({ className }) => {
   const location = useLocation();
   const isMainPage = location.pathname === '/';
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const updatedClassName = isMainPage ? className : "header-scrolled";
 
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
@@ -44,10 +46,10 @@ const Header = ({ className }) => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full text-white p-4 z-50 transition-all duration-500 ${className}`}
+      className={`fixed top-0 left-0 w-full text-white p-4 z-50 transition-all duration-500 ${updatedClassName}`}
       aria-label="Main Navigation"
     >
-      <nav className="container mx-auto flex justify-between items-center">
+      <nav className="font-Montserrat container mx-auto flex justify-between items-center">
         {/* Brand Logo */}
         <div className="text-2xl font-bold">
           <img
@@ -58,7 +60,7 @@ const Header = ({ className }) => {
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-4">
+        {/*<ul className="hidden md:flex space-x-4">
           {isMainPage ? (
             <>
               <li>
@@ -76,15 +78,15 @@ const Header = ({ className }) => {
               </li>
               <li>
                 <a
-                  href="#expertise"
+                  href="#product"
                   className="hover:underline"
                   aria-label="Navigate to Expertise section"
                   onClick={(e) => {
                     e.preventDefault();
-                    scrollToSection('expertise');
+                    scrollToSection('product');
                   }}
                 >
-                  EXPERTISE
+                  SERVICES
                 </a>
               </li>
               <li>
@@ -127,11 +129,11 @@ const Header = ({ className }) => {
               </li>
               <li>
                 <a
-                  href="/#expertise"
+                  href="/#product"
                   className="hover:underline"
                   aria-label="Navigate to Expertise section on landing page"
                 >
-                  EXPERTISE
+                  SERVICES
                 </a>
               </li>
               <li>
@@ -154,10 +156,10 @@ const Header = ({ className }) => {
               </li>
             </>
           )}
-        </ul>
+        </ul>/*}
 
         {/* Hamburger Menu Icon */}
-        <div className="md:hidden z-50">
+        <div className="z-50">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="focus:outline-none"
@@ -170,7 +172,6 @@ const Header = ({ className }) => {
               stroke="currentColor"
               className="w-8 h-8 text-white"
             >
-              {console.log(isMenuOpen)}
               {isMenuOpen ? (
                 // Cross Icon
                 <path
@@ -202,8 +203,8 @@ const Header = ({ className }) => {
             {isMainPage ? (
               <>
                 <li>
-                  <a
-                    href="#work"
+                  <Link
+                    href="/"
                     onClick={(e) => {
                       e.preventDefault();
                       scrollToSection('work');
@@ -212,24 +213,24 @@ const Header = ({ className }) => {
                     className="hover:underline"
                   >
                     WORK
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#expertise"
+                  <Link
+                    href="/"
                     onClick={(e) => {
                       e.preventDefault();
-                      scrollToSection('expertise');
+                      scrollToSection('product');
                       setIsMenuOpen(false);
                     }}
                     className="hover:underline"
                   >
-                    EXPERTISE
-                  </a>
+                    SERVICES
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#about"
+                  <Link
+                    href="/"
                     onClick={(e) => {
                       e.preventDefault();
                       scrollToSection('about');
@@ -237,12 +238,12 @@ const Header = ({ className }) => {
                     }}
                     className="hover:underline"
                   >
-                    ABOUT
-                  </a>
+                    ABOUT US
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="#contact"
+                  <Link
+                    href="/"
                     onClick={(e) => {
                       e.preventDefault();
                       scrollToSection('contact');
@@ -250,47 +251,47 @@ const Header = ({ className }) => {
                     }}
                     className="hover:underline"
                   >
-                    CONTACT
-                  </a>
+                    CONTACT US
+                  </Link>
                 </li>
               </>
             ) : (
               <>
                 <li>
-                  <a
-                    href="/#work"
+                  <Link
+                    href="/"
                     className="hover:underline"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     WORK
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/#expertise"
+                  <Link
+                    href="/"
                     className="hover:underline"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    EXPERTISE
-                  </a>
+                    SERVICES
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/#about"
+                  <Link
+                    href="/"
                     className="hover:underline"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    ABOUT
-                  </a>
+                    ABOUT US
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="/#contact"
+                  <Link
+                    href="/"
                     className="hover:underline"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    CONTACT
-                  </a>
+                    CONTACT US
+                  </Link>
                 </li>
               </>
             )}

@@ -6,6 +6,7 @@ const HandballPage = () => {
   const cardsRef = useRef([]);
     
   useEffect(() => {
+    document.title = "Design on a Dime | Handball";
     window.scrollTo(0, 0);
     gsap.utils.toArray(cardsRef.current).forEach((card, i) => {
       gsap.set(card, { opacity: 0 }); // Ensure each card starts hidden
@@ -31,28 +32,28 @@ const HandballPage = () => {
           {/* Second Card */}
           <div ref={(el) => (cardsRef.current[0] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/MATCH_ID_AR.png" alt="Cricket Image"/>
+              <img className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/MATCH_ID_AR.webp" alt="Handball Image"/>
             </div>
           </div>
           {/* Second Card */}
           <div ref={(el) => (cardsRef.current[1] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/POINTS_TABLE.png" alt="Cricket Image"/>
+              <img className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/POINTS_TABLE.webp" alt="Handball Image"/>
             </div>
           </div>
           <div ref={(el) => (cardsRef.current[2] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/MATCH_ID.png" alt="Cricket Image"/>
+              <img className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/MATCH_ID.webp" alt="Handball Image"/>
             </div>
           </div>
           <div ref={(el) => (cardsRef.current[3] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/SQUAD_AR.png" alt="Cricket Image"/>
+              <img className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/SQUAD_AR.webp" alt="Handball Image"/>
             </div>
           </div>
           <div ref={(el) => (cardsRef.current[4] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/HandBall_FF.png" alt="Cricket Image"/>
+              <img className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/HandBall_FF.webp" alt="Handball Image"/>
             </div>
           </div>
 

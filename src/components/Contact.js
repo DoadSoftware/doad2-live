@@ -1,13 +1,15 @@
-import React from "react";
+import {React} from "react";
+import { NavLink } from "react-router-dom";
 
-const Contact = () => (
-  <section className="py-16 bg-secondary-light text-white border-t-8 border-b border-blue-300">
+const Contact = () => {
+  return (
+    <section className="py-16 mt-4 bg-secondary-light text-white border-t-8 border-b border-blue-300" id="contact">
     <div className="container mx-auto px-4 md:px-16 lg:px-32">
-      <h2 className="text-4xl font-bold text-center mb-12" data-aos="fade-up">CONTACT US</h2>
+      <h2 className="font-Oswald text-3xl font-bold text-center mb-12" data-aos="fade-up">CONTACT US</h2>
       <div className="flex flex-col md:flex-row justify-between">
         <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8" data-aos="fade-up">
-          <h3 className="text-2xl font-bold mb-4">India</h3>
-          <p className="mb-4">
+          <h3 className="font-Montserrat text-2xl font-bold mb-4">India</h3>
+          <p className="font-Montserrat mb-4">
             <strong>Regd Office -</strong>
             <br />
               DESIGN ON A DIME Pvt. Ltd.
@@ -20,7 +22,7 @@ const Contact = () => (
             address....
           </p>
         </div>
-        <div className="md:w-1/2 bg-secondary-light p-8 border border-blue-300 rounded-lg shadow-lg" data-aos="fade-up">
+        <div className="font-Montserratmd:w-1/2 bg-secondary-light p-8 border border-blue-300 rounded-lg shadow-lg" data-aos="fade-up">
           <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="4e686132-1a5a-4496-bae7-72af43820cb4"/>
             <div className="mb-6">
@@ -89,12 +91,13 @@ const Contact = () => (
             </div>
             <p className="text-sm text-gray-500 mb-4">
               Please note: By providing your information, you consent and
-              acknowledge that you understand the{" "}
-              <a href="#" className="text-blue-500">
-                DOAD Privacy Policy
-              </a>
-              .
+              acknowledge that you understand the {" "}
+              <NavLink to="/privacyPolicy" className="text-blue-500 inline-block">Privacy Policy | </NavLink>
+              {" "}
+              <NavLink to="/termsOfUse" className="text-blue-500 inline-block">Terms of Use</NavLink>
+              
             </p>
+            
             <div className="text-center">
               <button
                 type="submit"
@@ -108,6 +111,7 @@ const Contact = () => (
       </div>
     </div>
   </section>
-);
+  );
+};
 
 export default Contact;

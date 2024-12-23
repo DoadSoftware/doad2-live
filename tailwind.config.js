@@ -5,6 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         gilroy: ["Gilroy", "sans-serif"],
+        Montserrat: ["Montserrat","sans-serif"],
+        Oswald: ["Oswald", "Montserrat"]
       },
       colors: {
         primary: {

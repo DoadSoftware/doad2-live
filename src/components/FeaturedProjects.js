@@ -8,7 +8,7 @@ const FeaturedProjects = () => (
   >
     <div className="container mx-auto">
       <h2
-        className="text-3xl font-bold text-center mb-8 text-white"
+        className="font-Oswald text-3xl font-bold text-center mb-8 text-white"
         data-aos="fade-up"
       >
         OUR WORK
@@ -22,7 +22,7 @@ const FeaturedProjects = () => (
           <div className="relative overflow-hidden">
             <Link to="/cricket">
               <img
-                src="./images/Cricket.jpg"
+                src="./images/featuredProjects/Cricket.webp"
                 alt="Cricket"
                 className="w-full object-cover cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 hover:blur-md"
               />
@@ -30,7 +30,7 @@ const FeaturedProjects = () => (
                 className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500"
                 style={{ backdropFilter: "blur(1px)" }}
               >
-                <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">
+                <h3 className="font-Oswald text-white text-5xl font-extrabold cursor-zoom-in">
                   CRICKET
                 </h3>
                 <p className="fa-solid fa-circle-arrow-right text-5xl pl-3" style={{ color: 'white' }}></p>
@@ -47,7 +47,7 @@ const FeaturedProjects = () => (
           <div className="relative overflow-hidden">
             <Link to="/football">
               <img
-                src="./images/Football.jpg"
+                src="./images/featuredProjects/football1.webp"
                 alt="Football"
                 className="w-full object-cover cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 hover:blur-sm"
               />
@@ -55,7 +55,7 @@ const FeaturedProjects = () => (
                 className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500"
                 style={{ backdropFilter: "blur(1px)" }}
               >
-                <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">
+                <h3 className="font-Oswald text-white text-5xl font-extrabold cursor-zoom-in">
                   FOOTBALL
                 </h3>
                 <p className="fa-solid fa-circle-arrow-right text-5xl pl-3" style={{ color: 'white' }}></p>
@@ -72,7 +72,7 @@ const FeaturedProjects = () => (
           <div className="relative overflow-hidden">
             <Link to="/handball">
               <img
-                src="./images/Handball.jpg"
+                src="./images/featuredProjects/Handball.webp"
                 alt="Handball"
                 className="w-full object-cover cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 hover:blur-sm"
               />
@@ -80,7 +80,7 @@ const FeaturedProjects = () => (
                 className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500"
                 style={{ backdropFilter: "blur(1px)" }}
               >
-                <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">
+                <h3 className="font-Oswald text-white text-5xl font-extrabold cursor-zoom-in">
                   HANDBALL
                 </h3>
                 <p className="fa-solid fa-circle-arrow-right text-5xl pl-3" style={{ color: 'white' }}></p>
@@ -97,7 +97,7 @@ const FeaturedProjects = () => (
           <div className="relative overflow-hidden">
             <Link to="/tennis">
               <img
-                src="./images/Tennis.jpg"
+                src="./images/featuredProjects/tennis1.webp"
                 alt="Tennis"
                 className="w-full object-cover cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 hover:blur-sm"
               />
@@ -105,7 +105,7 @@ const FeaturedProjects = () => (
                 className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500"
                 style={{ backdropFilter: "blur(1px)" }}
               >
-                <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">
+                <h3 className="font-Oswald text-white text-5xl font-extrabold cursor-zoom-in">
                   TENNIS
                 </h3>
                 <p className="fa-solid fa-circle-arrow-right text-5xl pl-3" style={{ color: 'white' }}></p>
@@ -122,7 +122,7 @@ const FeaturedProjects = () => (
           <div className="relative overflow-hidden">
             <Link to="/kabaddi">
               <img
-                src="./images/Kabaddi.jpg"
+                src="./images/featuredProjects/Kabaddi.webp"
                 alt="Kabaddi"
                 className="w-full object-cover cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 hover:blur-sm"
               />
@@ -130,7 +130,7 @@ const FeaturedProjects = () => (
                 className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500"
                 style={{ backdropFilter: "blur(1px)" }}
               >
-                <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">
+                <h3 className="font-Oswald text-white text-5xl font-extrabold cursor-zoom-in">
                   KABADDI
                 </h3>
                 <p className="fa-solid fa-circle-arrow-right text-5xl pl-3" style={{ color: 'white' }}></p>
@@ -145,9 +145,9 @@ const FeaturedProjects = () => (
           data-aos="fade-up"
         >
           <div className="relative overflow-hidden">
-            <Link to="/athletics">
+            <Link to="/others">
               <img
-                src="./images/Athletic.jpg"
+                src="./images/featuredProjects/Athletic.webp"
                 alt="Athletics"
                 className="w-full object-cover cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-105 hover:blur-sm"
               />
@@ -155,8 +155,8 @@ const FeaturedProjects = () => (
                 className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-500"
                 style={{ backdropFilter: "blur(1px)" }}
               >
-                <h3 className="text-white text-5xl font-extrabold cursor-zoom-in">
-                  ATHLETICS
+                <h3 className="font-Oswald text-white text-5xl font-extrabold cursor-zoom-in">
+                  OTHERS
                 </h3>
                 {/* <p className="fa-solid fa-circle-arrow-right text-5xl pl-3"></p> */}
                 <p className="fa-solid fa-circle-arrow-right text-5xl pl-3" style={{ color: 'white' }}></p>
