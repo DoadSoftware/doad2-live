@@ -2,12 +2,12 @@ import React, { useEffect, useRef } from "react";
 
 const logos = [
   { src: "./images/ICC.png", alt: "ICC", name: "ICC" },
-  { src: "./images/Hotstar.png", alt: "Hotstar", name: "Hotstar" },
-  { src: "./images/star_sport.png", alt: "Star Sport", name: "Star Sport" },
   { src: "./images/sony.png", alt: "SONY", name: "SONY" },
   { src: "./images/jio.png", alt: "Jio", name: "Jio" },
-  { src: "./images/khelo_india.png", alt: "Khelo India", name: "Khelo India" },
   { src: "./images/Rise.png", alt: "Rise", name: "Rise" },
+  /*{ src: "./images/Hotstar.png", alt: "Hotstar", name: "Hotstar" },
+  { src: "./images/star_sport.png", alt: "Star Sport", name: "Star Sport" },
+  { src: "./images/khelo_india.png", alt: "Khelo India", name: "Khelo India" }*/,
 ];
 
 const HorizontalScrollSection = () => {

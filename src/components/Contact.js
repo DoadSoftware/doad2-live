@@ -15,14 +15,7 @@ const Contact = () => {
           <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8" data-aos="fade-up">
             <h3 className="font-Montserrat text-2xl font-bold mb-4">India</h3>
             <p className="font-Montserrat mb-4">
-              <strong>Registered Office -</strong>
-              <br />
-              DESIGN ON A DIME Pvt. Ltd.
-              <br />
-              10 Karanpur Dehradun, Uttarakhand 248001
-            </p>
-            <p className="font-Montserrat mb-4">
-              <strong>Corporate Office -</strong>
+              <strong>Reach Us At -</strong>
               <br />
               DESIGN ON A DIME Pvt. Ltd.
               <br />
