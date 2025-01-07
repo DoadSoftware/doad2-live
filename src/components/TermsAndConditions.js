@@ -2,12 +2,10 @@ import {React, useEffect} from 'react';
 import {NavLink } from 'react-router-dom';
 
 const TermsAndConditions = () => {
-  
     useEffect(()=>{
         window.scrollTo(0, 0);
         document.title="Terms of Use"
     },[]);
-
   return (
     <section className="py-16 bg-primary-light" id="termsOfUse">
         <div>
@@ -20,7 +18,6 @@ const TermsAndConditions = () => {
                     media channels. By accessing or using our services, you agree to comply with these terms.
                 </p>
             </div>
-
             <div className="mt-20 card text-white ml-11 mr-11">
                 <ul className='list-disc font-Montserrat'>
                     <li className='mb-8'> 

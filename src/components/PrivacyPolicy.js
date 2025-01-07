@@ -1,13 +1,10 @@
 import {React, useEffect} from 'react';
 import {NavLink } from 'react-router-dom';
-
 const PrivacyPolicy = () => {
-  
     useEffect(()=>{
         window.scrollTo(0, 0);
         document.title="Privacy & Policy"
     },[]);
-
   return (
     <section className="py-16 bg-primary-light" id="privacyPolicy">
         <div>
@@ -16,7 +13,6 @@ const PrivacyPolicy = () => {
             <p className='font-Montserrat mb-8'>Last Updated [28<sup>th</sup> October 2024]</p>
             <p className='font-Montserrat'>Design on a Dime private limited is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, [www.doad.live]. Please read this policy carefully to understand our views and practices regarding your personal data.</p>
         </div>
-
         <div className="mt-20 card text-white ml-11">
             <h3 className='font-Oswald mb-4 font-bold text-3xl'>Information We Collect & Use</h3>
             <ul className='list-disc font-Montserrat'>

@@ -28,7 +28,7 @@ const ProductAndServices = () => {
     <section className="py-16 bg-primary-light border-t border-blue-300" id="product">
       <div className="container mx-auto">
         <h2 className="font-Oswald text-3xl font-bold text-center mb-8 text-white">
-          PRODUCTS & SERVICES
+          Products & Services
         </h2>
 
         <div className="relative space-y-16">

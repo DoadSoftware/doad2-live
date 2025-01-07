@@ -1,14 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const Header = ({ className }) => {
   const location = useLocation();
   const isMainPage = location.pathname === '/';
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const updatedClassName = isMainPage ? className : "header-scrolled";
-
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -18,27 +15,19 @@ const Header = ({ className }) => {
       });
     }
   };
-
   const [imageSrc, setImageSrc] = useState('./images/doad_logo_fulltext_white.png');
-
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 640) { // sm breakpoint
-        setImageSrc('./images/logo-white.png'); // Change to small image
-      } else if (window.innerWidth < 768) { // md breakpoint
-        setImageSrc('./images/doad_logo_fulltext_white.png'); // Change to medium image
+      if (window.innerWidth < 640) { 
+        setImageSrc('./images/logo-white.png'); 
+      } else if (window.innerWidth < 768) { 
+        setImageSrc('./images/doad_logo_fulltext_white.png');
       } else {
-        setImageSrc('./images/doad_logo_fulltext_white.png'); // Default image
+        setImageSrc('./images/doad_logo_fulltext_white.png');
       }
     };
-
-    // Initial check
     handleResize();
-
-    // Add event listener
     window.addEventListener('resize', handleResize);
-    
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener('resize', handleResize);
     };
@@ -50,17 +39,14 @@ const Header = ({ className }) => {
       aria-label="Main Navigation"
     >
       <nav className="font-Montserrat container mx-auto flex justify-between items-center">
-        {/* Brand Logo */}
         <div className="text-2xl font-bold">
-          <img
+          <img loading="lazy"
             src={imageSrc}
             className="max-h-10 ml-7"
             alt="Doad Logo"
           />
         </div>
-
-        {/* Desktop Menu */}
-        {/*<ul className="hidden md:flex space-x-4">
+        <ul className="hidden md:flex space-x-4">
           {isMainPage ? (
             <>
               <li>
@@ -156,142 +142,116 @@ const Header = ({ className }) => {
               </li>
             </>
           )}
-        </ul>/*}
-
-        {/* Hamburger Menu Icon */}
-        <div className="z-50">
-          <button
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="focus:outline-none"
-            aria-label="Toggle menu"
+        </ul>
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="focus:outline-none z-50 md:hidden"
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            className="w-8 h-8 text-white"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              className="w-8 h-8 text-white"
-            >
-              {isMenuOpen ? (
-                // Cross Icon
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                  className='text-white'
-                />
-              ) : (
-                // Hamburger Icon
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M4 6h16M4 12h16M4 18h16"
-                  className='text-white'
-                />
-              )}
-            </svg>
-          </button>
-        </div>
+            {isMenuOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            )}
+          </svg>
+        </button>
       </nav>
-
-      {/* Mobile Menu Overlay (40% of the screen height) */}
       {isMenuOpen && (
-        <div className="fixed top-0 left-0 w-full h-[40%] bg-primary-light text-white z-40 flex flex-col items-center justify-center space-y-8">
-          <ul className="space-y-8 text-center text-2xl">
+        <div className="fixed top-0 left-0 w-full h-60 bg-primary-light text-white z-40 flex flex-col items-center justify-center space-y-8">
+          <ul className="space-y-4 text-center text-2xl">
             {isMainPage ? (
               <>
                 <li>
-                  <Link
-                    href="/"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      scrollToSection('work');
-                      setIsMenuOpen(false); // Close menu on click
-                    }}
+                  <a
+                    href="#work"
+                    onClick={() => setIsMenuOpen(false)}
                     className="hover:underline"
                   >
                     WORK
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="/"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      scrollToSection('product');
-                      setIsMenuOpen(false);
-                    }}
+                  <a
+                    href="#product"
+                    onClick={() => setIsMenuOpen(false)}
                     className="hover:underline"
                   >
                     SERVICES
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="/"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      scrollToSection('about');
-                      setIsMenuOpen(false);
-                    }}
+                  <a
+                    href="#about"
+                    onClick={() => setIsMenuOpen(false)}
                     className="hover:underline"
                   >
-                    ABOUT US
-                  </Link>
+                    ABOUT
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="/"
-                    onClick={(e) => {
-                      e.preventDefault();
-                      scrollToSection('contact');
-                      setIsMenuOpen(false);
-                    }}
+                  <a
+                    href="#contact"
+                    onClick={() => setIsMenuOpen(false)}
                     className="hover:underline"
                   >
-                    CONTACT US
-                  </Link>
+                    CONTACT
+                  </a>
                 </li>
               </>
             ) : (
               <>
                 <li>
-                  <Link
-                    href="/"
-                    className="hover:underline"
+                  <a
+                    href="/#work"
                     onClick={() => setIsMenuOpen(false)}
+                    className="hover:underline"
                   >
                     WORK
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="/"
-                    className="hover:underline"
+                  <a
+                    href="/#product"
                     onClick={() => setIsMenuOpen(false)}
+                    className="hover:underline"
                   >
                     SERVICES
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="/"
-                    className="hover:underline"
+                  <a
+                    href="/#about"
                     onClick={() => setIsMenuOpen(false)}
+                    className="hover:underline"
                   >
-                    ABOUT US
-                  </Link>
+                    ABOUT
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="/"
-                    className="hover:underline"
+                  <a
+                    href="/#contact"
                     onClick={() => setIsMenuOpen(false)}
+                    className="hover:underline"
                   >
-                    CONTACT US
-                  </Link>
+                    CONTACT
+                  </a>
                 </li>
               </>
             )}
