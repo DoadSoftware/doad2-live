@@ -26,27 +26,27 @@ const HandballPage = () => {
         <div className="relative space-y-40">
           <div ref={(el) => (cardsRef.current[0] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/MATCH_ID_AR.webp" alt="Handball Image"/>
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/MATCH_ID_AR.webp" alt="Handball"/>
             </div>
           </div>
           <div ref={(el) => (cardsRef.current[1] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/POINTS_TABLE.webp" alt="Handball Image"/>
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/POINTS_TABLE.webp" alt="Handball"/>
             </div>
           </div>
           <div ref={(el) => (cardsRef.current[2] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/MATCH_ID.webp" alt="Handball Image"/>
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/MATCH_ID.webp" alt="Handball"/>
             </div>
           </div>
           <div ref={(el) => (cardsRef.current[3] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/SQUAD_AR.webp" alt="Handball Image"/>
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/SQUAD_AR.webp" alt="Handball"/>
             </div>
           </div>
           <div ref={(el) => (cardsRef.current[4] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/HandBall_FF.webp" alt="Handball Image"/>
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Handball/HandBall_FF.webp" alt="Handball"/>
             </div>
           </div>
         </div>

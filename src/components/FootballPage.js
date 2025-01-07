@@ -27,27 +27,27 @@ const FootballPage = () => {
         <div className="relative space-y-40">
           <div ref={(el) => (cardsRef.current[0] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Football/SUBSTITUTES.webp" alt="Cricket Image"/>
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Football/SUBSTITUTES.webp" alt="Cricket"/>
             </div>
           </div>
           <div ref={(el) => (cardsRef.current[1] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Football/LOF_AVG.FORMATION.webp" alt="Cricket Image"/>
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Football/LOF_AVG.FORMATION.webp" alt="Cricket"/>
             </div>
           </div>
           <div ref={(el) => (cardsRef.current[2] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Football/FF_MATCHSTATS.webp" alt="Cricket Image"/>
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Football/FF_MATCHSTATS.webp" alt="Cricket"/>
             </div>
           </div>
           <div ref={(el) => (cardsRef.current[3] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Football/STARTING XI.webp" alt="Cricket Image"/>
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Football/STARTING XI.webp" alt="Cricket"/>
             </div>
           </div>
           <div ref={(el) => (cardsRef.current[4] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Football/LOF_STATS.webp" alt="Cricket Image"/>
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Football/LOF_STATS.webp" alt="Cricket"/>
             </div>
           </div>
         </div>

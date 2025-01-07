@@ -21,10 +21,12 @@ const Contact = () => {
               <br />
               10 Karanpur Dehradun, Uttarakhand 248001
             </p>
-            <p className="mb-4">
+            <p className="font-Montserrat mb-4">
               <strong>Corporate Office -</strong>
               <br />
-              address....
+              DESIGN ON A DIME Pvt. Ltd.
+              <br />
+              Kamleshwar nagar, Gujrara Mansingh, Uttarakhand 248001
             </p>
           </div>
           <div className="font-Montserrat md:w-1/2 bg-secondary-light p-8 border border-blue-300 rounded-lg shadow-lg" data-aos="fade-up">

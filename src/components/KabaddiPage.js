@@ -27,27 +27,27 @@ const KabaddiPage = () => {
         <div className="relative space-y-40">
           <div ref={(el) => (cardsRef.current[0] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img loading='lazy' className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Kabaddi/Kabaddi_vr.webp" alt="Cricket Image"/>
+              <img loading='lazy' className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Kabaddi/Kabaddi_vr.webp" alt="Cricket"/>
             </div>
           </div>
           <div ref={(el) => (cardsRef.current[1] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Kabaddi/Top_raiders.webp" alt="Cricket Image"/>
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Kabaddi/Top_raiders.webp" alt="Cricket"/>
             </div>
           </div>
           <div ref={(el) => (cardsRef.current[2] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Kabaddi/kabaddi_h2h.webp" alt="Cricket Image"/>
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Kabaddi/kabaddi_h2h.webp" alt="Cricket"/>
             </div>
           </div>
           <div ref={(el) => (cardsRef.current[3] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Kabaddi/kabaddi_lineup.webp" alt="Cricket Image"/>
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Kabaddi/kabaddi_lineup.webp" alt="Cricket"/>
             </div>
           </div>
           <div ref={(el) => (cardsRef.current[4] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
-              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Kabaddi/Kabaddi_LT.webp" alt="Cricket Image"/>
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Kabaddi/Kabaddi_LT.webp" alt="Cricket"/>
             </div>
           </div>
         </div>

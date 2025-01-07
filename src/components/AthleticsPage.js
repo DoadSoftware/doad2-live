@@ -50,7 +50,7 @@ const AtheleticsPage = () => {
                   loading="lazy"
                   className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg"
                   src={`./images/Others/OTHER${i + 1}.webp`}
-                  alt={`OTHER${i + 1} Image`}
+                  alt={`OTHER${i + 1}`}
                 />
               </div>
             </div>
