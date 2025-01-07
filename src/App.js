@@ -9,7 +9,6 @@ import HeroSection from "./components/HeroSection";
 import AboutSection from "./components/About";
 import FeaturedProjects from "./components/FeaturedProjects";
 import Clients from "./components/Clients";
-import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import CricketPage from "./components/CricketPage";
 import FootballPage from "./components/FootballPage";
