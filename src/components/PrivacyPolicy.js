@@ -1,10 +1,13 @@
-import {React, useEffect} from 'react';
+import {React, useEffect, useState} from 'react';
 import {NavLink } from 'react-router-dom';
+import Header from './Header';
+
 const PrivacyPolicy = () => {
     useEffect(()=>{
         window.scrollTo(0, 0);
         document.title="Privacy & Policy"
     },[]);
+    
   return (
     <section className="py-16 bg-primary-light" id="privacyPolicy">
         <div>
@@ -38,11 +41,12 @@ const PrivacyPolicy = () => {
                 </li>
                 <li className='mb-8'> 
                     <h4 className='font-bold'>Contact Us</h4> 
-                    <p>If you have any query regarding this privacy policy please <NavLink to="/contact" className={"underline text-orange-400"}> contact us</NavLink></p>
+                    <p>If you have any query regarding this privacy policy please <NavLink to="/contact" className={"underline text-orange-400"}> contact us</NavLink> | <NavLink to="/heroSection" className={"underline text-orange-400"}> Home</NavLink></p>
                 </li>
             </ul>
         </div>
         </div>
+        
     </section>
   );
 };

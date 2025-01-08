@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
 const Header = ({ className }) => {
   const location = useLocation();
-  const isMainPage = location.pathname === '/';
+  const isMainPage = location.pathname === "/";
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const updatedClassName = isMainPage ? className : "header-scrolled";
   const scrollToSection = (id) => {
@@ -11,25 +11,27 @@ const Header = ({ className }) => {
     if (element) {
       window.scrollTo({
         top: element.offsetTop,
-        behavior: 'smooth',
+        behavior: "smooth",
       });
     }
   };
-  const [imageSrc, setImageSrc] = useState('./images/doad_logo_fulltext_white.png');
+  const [imageSrc, setImageSrc] = useState(
+    "./images/doad_logo_fulltext_white.png"
+  );
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 640) { 
-        setImageSrc('./images/logo-white.png'); 
-      } else if (window.innerWidth < 768) { 
-        setImageSrc('./images/doad_logo_fulltext_white.png');
+      if (window.innerWidth < 640) {
+        setImageSrc("./images/logo-white.png");
+      } else if (window.innerWidth < 768) {
+        setImageSrc("./images/doad_logo_fulltext_white.png");
       } else {
-        setImageSrc('./images/doad_logo_fulltext_white.png');
+        setImageSrc("./images/doad_logo_fulltext_white.png");
       }
     };
     handleResize();
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -40,11 +42,21 @@ const Header = ({ className }) => {
     >
       <nav className="font-Montserrat container mx-auto flex justify-between items-center">
         <div className="text-2xl font-bold">
-          <img loading="lazy"
-            src={imageSrc}
-            className="max-h-10 ml-7"
-            alt="Doad Logo"
-          />
+          <a
+            href="#heroSection"
+            aria-label="Navigate to Expertise section"
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection("heroSection");
+            }}
+          >
+            <img
+              loading="lazy"
+              src={imageSrc}
+              className="max-h-10 ml-7"
+              alt="Doad Logo"
+            />
+          </a>
         </div>
         <ul className="hidden md:flex space-x-4">
           {isMainPage ? (
@@ -56,10 +68,10 @@ const Header = ({ className }) => {
                   aria-label="Navigate to Work section"
                   onClick={(e) => {
                     e.preventDefault();
-                    scrollToSection('work');
+                    scrollToSection("work");
                   }}
                 >
-                  WORK
+                  Work
                 </a>
               </li>
               <li>
@@ -69,10 +81,10 @@ const Header = ({ className }) => {
                   aria-label="Navigate to Expertise section"
                   onClick={(e) => {
                     e.preventDefault();
-                    scrollToSection('product');
+                    scrollToSection("product");
                   }}
                 >
-                  SERVICES
+                  Service
                 </a>
               </li>
               <li>
@@ -82,10 +94,10 @@ const Header = ({ className }) => {
                   aria-label="Navigate to About section"
                   onClick={(e) => {
                     e.preventDefault();
-                    scrollToSection('about');
+                    scrollToSection("about");
                   }}
                 >
-                  ABOUT
+                  About
                 </a>
               </li>
               <li>
@@ -95,10 +107,10 @@ const Header = ({ className }) => {
                   aria-label="Navigate to Contact section"
                   onClick={(e) => {
                     e.preventDefault();
-                    scrollToSection('contact');
+                    scrollToSection("contact");
                   }}
                 >
-                  CONTACT
+                  Contact
                 </a>
               </li>
             </>
@@ -110,7 +122,7 @@ const Header = ({ className }) => {
                   className="hover:underline"
                   aria-label="Navigate to Work section on landing page"
                 >
-                  WORK
+                  Work
                 </a>
               </li>
               <li>
@@ -119,7 +131,7 @@ const Header = ({ className }) => {
                   className="hover:underline"
                   aria-label="Navigate to Expertise section on landing page"
                 >
-                  SERVICES
+                  Services
                 </a>
               </li>
               <li>
@@ -128,7 +140,7 @@ const Header = ({ className }) => {
                   className="hover:underline"
                   aria-label="Navigate to About section on landing page"
                 >
-                  ABOUT
+                  About
                 </a>
               </li>
               <li>
@@ -137,7 +149,7 @@ const Header = ({ className }) => {
                   className="hover:underline"
                   aria-label="Navigate to Contact section on landing page"
                 >
-                  CONTACT
+                  Contact
                 </a>
               </li>
             </>
@@ -184,7 +196,7 @@ const Header = ({ className }) => {
                     onClick={() => setIsMenuOpen(false)}
                     className="hover:underline"
                   >
-                    WORK
+                    Work
                   </a>
                 </li>
                 <li>
@@ -193,7 +205,7 @@ const Header = ({ className }) => {
                     onClick={() => setIsMenuOpen(false)}
                     className="hover:underline"
                   >
-                    SERVICES
+                    Services
                   </a>
                 </li>
                 <li>
@@ -202,7 +214,7 @@ const Header = ({ className }) => {
                     onClick={() => setIsMenuOpen(false)}
                     className="hover:underline"
                   >
-                    ABOUT
+                    About
                   </a>
                 </li>
                 <li>
@@ -211,7 +223,7 @@ const Header = ({ className }) => {
                     onClick={() => setIsMenuOpen(false)}
                     className="hover:underline"
                   >
-                    CONTACT
+                    Contact
                   </a>
                 </li>
               </>
@@ -223,7 +235,7 @@ const Header = ({ className }) => {
                     onClick={() => setIsMenuOpen(false)}
                     className="hover:underline"
                   >
-                    WORK
+                    Work
                   </a>
                 </li>
                 <li>
@@ -232,7 +244,7 @@ const Header = ({ className }) => {
                     onClick={() => setIsMenuOpen(false)}
                     className="hover:underline"
                   >
-                    SERVICES
+                    Services
                   </a>
                 </li>
                 <li>
@@ -241,7 +253,7 @@ const Header = ({ className }) => {
                     onClick={() => setIsMenuOpen(false)}
                     className="hover:underline"
                   >
-                    ABOUT
+                    About
                   </a>
                 </li>
                 <li>
@@ -250,7 +262,7 @@ const Header = ({ className }) => {
                     onClick={() => setIsMenuOpen(false)}
                     className="hover:underline"
                   >
-                    CONTACT
+                    Contact
                   </a>
                 </li>
               </>

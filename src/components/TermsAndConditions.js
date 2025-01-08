@@ -63,7 +63,7 @@ const TermsAndConditions = () => {
                     </li>
                     <li className='mb-8'> 
                         <h4 className='font-bold'>Contact Information</h4> 
-                        <p>If you have questions regarding these Terms and Conditions, please <NavLink to="/contact" className={"underline text-orange-400"}> contact us</NavLink></p>
+                        <p>If you have questions regarding these Terms and Conditions, please <NavLink to="/contact" className={"underline text-orange-400"}> contact us</NavLink> | <NavLink to="/heroSection" className={"underline text-orange-400"}> Home</NavLink></p>
                     </li>
                 </ul>
             </div>

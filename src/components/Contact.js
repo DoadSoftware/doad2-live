@@ -15,11 +15,14 @@ const Contact = () => {
           <div className="md:w-1/2 mb-8 md:mb-0 md:pr-8" data-aos="fade-up">
             <h3 className="font-Montserrat text-2xl font-bold mb-4">India</h3>
             <p className="font-Montserrat mb-4">
-              <strong>Reach Us At -</strong>
+              <strong>Reach us at</strong>
               <br />
-              DESIGN ON A DIME Pvt. Ltd.
+              Design On a Dime Pvt. Ltd.
               <br />
-              Kamleshwar nagar, Gujrara Mansingh, Uttarakhand 248001
+              Kamleshwar nagar, Gujrara Mansingh,
+              <br/>
+              Uttarakhand,
+              <br/>248001
             </p>
           </div>
           <div className="font-Montserrat md:w-1/2 bg-secondary-light p-8 border border-blue-300 rounded-lg shadow-lg" data-aos="fade-up">
@@ -34,7 +37,7 @@ const Contact = () => {
                   htmlFor="name"
                   className="block text-sm font-medium text-gray-300"
                 >
-                  Full Name
+                  Name
                 </label>
                 <input
                   type="text"
@@ -50,7 +53,7 @@ const Contact = () => {
                   htmlFor="email"
                   className="block text-sm font-medium text-gray-300"
                 >
-                  Email Address
+                  Email
                 </label>
                 <input
                   type="email"
@@ -66,7 +69,7 @@ const Contact = () => {
                   htmlFor="contact"
                   className="block text-sm font-medium text-gray-300"
                 >
-                  Contact Number
+                  Phone
                 </label>
                 <PhoneInput
                   name="multipleErrorInput4"
@@ -99,8 +102,7 @@ const Contact = () => {
                 ></textarea>
               </div>
               <p className="text-sm text-gray-500 mb-4">
-                Please note: By providing your information, you consent and
-                acknowledge that you understand the{" "}
+                By providing your information, you acknowledge and consent to the {" "}
                 <NavLink
                   to="/privacyPolicy"
                   className="text-blue-500 inline-block"
@@ -120,7 +122,7 @@ const Contact = () => {
                   type="submit"
                   className="mt-6 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg shadow-md transition duration-300"
                 >
-                  SUBMIT MESSAGE
+                  Message
                 </button>
               </div>
             </form>

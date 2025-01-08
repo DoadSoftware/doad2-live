@@ -46,7 +46,7 @@ const ProductAndServices = () => {
                 Your browser does not support the video tag.
               </video>
               <div className="flex flex-col justify-between p-4 leading-normal h-full">
-                <h5 className="font-Montserrat mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">MATCH GRAPHICS</h5>
+                <h5 className="font-Montserrat mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Match Graphics</h5>
                 <p className="font-Montserrat mb-3 text-lg font-normal text-gray-700 dark:text-gray-400">
                   Our Match Graphics service is driven-by & designed to bring real-time, 
                   data-driven visuals to your live sports broadcasts, enhancing the viewing experience and keeping audiences engaged. 
@@ -73,7 +73,7 @@ const ProductAndServices = () => {
                 Your browser does not support the video tag.
               </video>
               <div className="flex flex-col justify-between p-4 leading-normal h-full">
-                <h5 className="font-Montserrat mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">AUGMENTED REALITY GRAPHICS</h5>
+                <h5 className="font-Montserrat mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Augmented Reality Graphics</h5>
                 <p className="font-Montserrat mb-3 text-lg font-normal text-gray-700 dark:text-gray-400">
                   With Augmented Reality (AR) Graphics, we take sports broadcasting to the next level by blending real-world 
                   footage with graphical enhancements. Our AR graphics create immersive experiences that engage viewers, 
@@ -100,7 +100,7 @@ const ProductAndServices = () => {
                 Your browser does not support the video tag.
               </video>
               <div className="flex flex-col justify-between p-4 leading-normal h-full">
-                <h5 className="font-Montserrat mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">VIRTUAL REALITY GRAPHICS</h5>
+                <h5 className="font-Montserrat mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Virtual Reality Graphics</h5>
                 <p className="font-Montserrat mb-3 text-lg font-normal text-gray-700 dark:text-gray-400">
                   Our Virtual Reality (VR) Graphics services offer an entirely new way for fans to experience live sports. 
                   Through fully immersive 3D environments, viewers can explore different aspects of the game in real-time. 
@@ -125,7 +125,7 @@ const ProductAndServices = () => {
                 Your browser does not support the video tag.
               </video>
               <div className="flex flex-col justify-between p-4 leading-normal h-full">
-                <h5 className="font-Montserrat mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">THIRD PARTY INTEGRATIONS</h5>
+                <h5 className="font-Montserrat mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Third Party Integrations</h5>
                 <p className="font-Montserrat mb-3 text-lg font-normal text-gray-700 dark:text-gray-400">
                   In today’s fast-paced world of broadcasting, having access to live data and external content is essential. 
                   Our Third Party Integration services allow seamless connection between broadcast graphics and external data sources, 
@@ -151,7 +151,7 @@ const ProductAndServices = () => {
                 Your browser does not support the video tag.
               </video>
               <div className="flex flex-col justify-between p-4 leading-normal h-full">
-                <h5 className="font-Montserrat mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">LIVE ENGAGEMENT ANALYTICS (LEA)</h5>
+                <h5 className="font-Montserrat mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Live Engagement analytics (LEA)</h5>
                 <p className="font-Montserrat mb-3 text-lg font-normal text-gray-700 dark:text-gray-400">
                   LEA is our in-house developed solution that seamlessly integrates real-time tracking and match data from third-party 
                   applications across various sports, enhancing broadcast visuals and enriching storytelling. This powerful innovation 
@@ -177,7 +177,7 @@ const ProductAndServices = () => {
                 Your browser does not support the video tag.
               </video>
               <div className="flex flex-col justify-between p-4 leading-normal h-full">
-                <h5 className="font-Montserrat mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">SPONSOR INTEGRATIONS</h5>
+                <h5 className="font-Montserrat mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Sponsor Integrations</h5>
                 <p className="font-Montserrat mb-3 text-lg font-normal text-gray-700 dark:text-gray-400">
                   Our Sponsor Integration service for Match Graphics & Virtual Reality broadcasts provides a unique opportunity for advertisers 
                   and sponsors to gain prime visibility in immersive environments. By embedding branded content, logos, and 
