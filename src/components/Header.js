@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Header = ({ className }) => {
   const location = useLocation();
+  const navigate = useNavigate();
   const isMainPage = location.pathname === "/";
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const updatedClassName = isMainPage ? className : "header-scrolled";
@@ -35,6 +36,14 @@ const Header = ({ className }) => {
     };
   }, []);
 
+  const handleLogoClick = (e) => {
+    e.preventDefault();
+    if (!isMainPage) {
+      navigate("/", { replace: true });
+    }
+    setTimeout(() => scrollToSection("heroSection"), 100); // Wait for navigation
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 w-full text-white p-4 z-50 transition-all duration-500 ${updatedClassName}`}
@@ -42,13 +51,10 @@ const Header = ({ className }) => {
     >
       <nav className="font-Montserrat container mx-auto flex justify-between items-center">
         <div className="text-2xl font-bold">
-          <a
+        <a
             href="#heroSection"
             aria-label="Navigate to Expertise section"
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection("heroSection");
-            }}
+            onClick={handleLogoClick}
           >
             <img
               loading="lazy"

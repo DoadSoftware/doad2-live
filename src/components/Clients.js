@@ -5,6 +5,9 @@ const logos = [
   { src: "./images/sony.png", alt: "SONY", name: "SONY" },
   { src: "./images/jio.png", alt: "Jio", name: "Jio" },
   { src: "./images/Rise.png", alt: "Rise", name: "Rise" },
+  { src: "./images/absolut.png", alt: "absolute", name: "Absolute" },
+  { src: "./images/wildTrack.png", alt: "wildTrack", name: "wildTrack" },
+  { src: "./images/jio.png", alt: "Jio", name: "Jio" },
 ];
 
 const HorizontalScrollSection = () => {
