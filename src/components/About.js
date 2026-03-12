@@ -10,7 +10,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-4 lg:px-20 xl:px-32" data-aos="fade-up">
         <div className="text-center max-w-6xl mx-auto">
           <h2 className="font-Oswald text-3xl sm:text-4xl lg:text-5xl font-bold mb-12">
-            About DOAD
+            About Us
           </h2>
           <p className="font-Montserrat text-base sm:text-lg lg:text-xl leading-relaxed mb-10 px-4 lg:px-12 xl:px-16">
             We are a group of passionate sports enthusiasts who have joined forces to provide cost-effective, state-of-the-art solutions to meet all our clients' needs. We harness the latest and most advanced technology available globally to deliver end-to-end services. Since our establishment in 2021, we have successfully secured and executed high-quality work across all our projects, ensuring customer satisfaction.
