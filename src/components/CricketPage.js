@@ -27,6 +27,46 @@ const CricketPage = () => {
         <div className="relative space-y-40">
           <div ref={(el) => (cardsRef.current[0] = el)} className="card sticky top-40">
             <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Cricket/ACC_IDENT.webp" alt="Cricket"/>
+            </div>
+          </div>
+          <div ref={(el) => (cardsRef.current[0] = el)} className="card sticky top-40">
+            <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Cricket/BATTING.webp" alt="Cricket"/>
+            </div>
+          </div>
+          <div ref={(el) => (cardsRef.current[0] = el)} className="card sticky top-40">
+            <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Cricket/SUMMARY.webp" alt="Cricket"/>
+            </div>
+          </div>
+          <div ref={(el) => (cardsRef.current[0] = el)} className="card sticky top-40">
+            <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Cricket/RESULT.webp" alt="Cricket"/>
+            </div>
+          </div>
+          <div ref={(el) => (cardsRef.current[0] = el)} className="card sticky top-40">
+            <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Cricket/MatchId.webp" alt="Cricket"/>
+            </div>
+          </div>
+          <div ref={(el) => (cardsRef.current[0] = el)} className="card sticky top-40">
+            <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Cricket/Playing.webp" alt="Cricket"/>
+            </div>
+          </div>
+          <div ref={(el) => (cardsRef.current[0] = el)} className="card sticky top-40">
+            <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Cricket/Target.webp" alt="Cricket"/>
+            </div>
+          </div>
+          <div ref={(el) => (cardsRef.current[0] = el)} className="card sticky top-40">
+            <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
+              <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Cricket/Counter.webp" alt="Cricket"/>
+            </div>
+          </div>
+          <div ref={(el) => (cardsRef.current[0] = el)} className="card sticky top-40">
+            <div className="bg-white border border-gray-200 rounded-lg shadow md:max-w-6xl mx-auto hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 min-h-[200px]">
               <img loading="lazy" className="rounded-t-lg min-h-[200px] md:h-auto md:rounded-s-lg" src="./images/Cricket/FF_PLAYERPROFILE.webp" alt="Cricket"/>
             </div>
           </div>

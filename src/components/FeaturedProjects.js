@@ -15,14 +15,15 @@ const FeaturedProjects = () => (
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-        {[...Array(6)].map((_, idx) => {
-          const titles = ["Cricket", "Football", "Handball", "Tennis", "Kabaddi", "Others"];
+        {[...Array(7)].map((_, idx) => {
+          const titles = ["Cricket", "Football", "Handball", "Tennis", "Kabaddi", "Golf", "Others"];
           const images = [
             "./images/featuredProjects/Cricket.webp",
             "./images/featuredProjects/football1.webp",
             "./images/featuredProjects/Handball.webp",
             "./images/featuredProjects/tennis1.webp",
             "./images/featuredProjects/Kabaddi.webp",
+            "./images/featuredProjects/Golf.webp",
             "./images/featuredProjects/Athletic.webp"
           ];
           return (

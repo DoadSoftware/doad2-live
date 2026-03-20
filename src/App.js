@@ -15,6 +15,7 @@ import FootballPage from "./components/FootballPage";
 import HandballPage from "./components/HandballPage";
 import TennisPage from "./components/TennisPage";
 import KabaddiPage from "./components/KabaddiPage";
+import GolfPage from "./components/GolfPage";
 import AthleticsPage from "./components/AthleticsPage";
 import Footer from "./components/Footer";
 import ProductAndServices from "./components/ProductAndServices";
@@ -52,6 +53,7 @@ const App = () => {
           <Route path="/handball" element={<HandballPage/>} />
           <Route path="/tennis" element={<TennisPage/>} />
           <Route path="/kabaddi" element={<KabaddiPage/>} />
+          <Route path="/golf" element={<GolfPage/>} />
           <Route path="/privacyPolicy" element={<PrivacyPolicy/>} />
           <Route path="/contact" element={<Contact/>} />
           <Route path="/others" element={<AthleticsPage/>} />
